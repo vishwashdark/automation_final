@@ -293,9 +293,9 @@ def scrape_insights(website_url: str) -> List[str]:
         return [f"Error processing {website_url}"]
 
 # === Gemini API Functions ===
-def get_gemini_api_key() -> str:
+def get_gemini_api_key() -> str:  #HARDCODED ENTER YOUR KEY HERE
     """Get Gemini API key (your provided key)"""
-    return "AIzaSyDt30zNxdamtyjrn4MxEHg2zLRqwsXATW8"  # Your provided Gemini API key
+    return " ENTER-YOUR-KEY-HERE "  # Your provided Gemini API key
 
 def gemini_generate_text(api_key: str, prompt_text: str, temperature: float = 0, 
                         top_p: float = 0.9, top_k: int = 40) -> Optional[str]:

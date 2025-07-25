@@ -2,6 +2,9 @@
 
 This project automates the creation of personalized outreach messages for potential leads using enriched company data. It integrates with the Gemini API for text generation and the Apollo API for lead fetching.
 
+# Complete flow chart of the code
+![Flow Chart](https://raw.githubusercontent.com/vishwashsharma/automation/main/flowchart.png)
+
 ## Project Structure
 
 - **`test.ipynb`**: Jupyter Notebook for testing and generating outreach messages.
@@ -22,7 +25,12 @@ This project automates the creation of personalized outreach messages for potent
    ```bash
    pip install -r requirements.txt
    ```
-4. **Run the Python script:**
+
+4. **Manually add the gemini API key in `test.ipynb`:**
+   Open `test1.py` and add the gemini api in get_gemini_api_key() function.
+
+
+5. **Run the Python script:**
    ```bash
    python test1.py
    ```
