@@ -1,0 +1,220 @@
+PS C:\Users\vishwash.sharma\Desktop\automation> & C:\Users\vishwash.sharma\Desktop\automation\.venv\Scripts\python.exe c:/Users/vishwash.sharma/Desktop/automation/test1.py --size '50-400' --industry 'software'
+Fetching leads from Apollo...
+Searching Apollo for companies: 50-400 employees, software industry...
+❌ Apollo API Error: 403 Client Error: Forbidden for url: https://api.apollo.io/api/v1/mixed_people/search
+Falling back to simulated data...
+Enriching lead data...
+Processing Basecamp...
+Processing Trello...
+Processing Zapier...
+Processing Buffer...
+Processing Canva...
+Warning: Could not retrieve data from https://www.canva.com: 403 Client Error: Forbidden for url: https://www.canva.com/
+Processing Notion...
+Processing ClickUp...
+Processing FreshBooks...
+Processing Loom...
+Processing Asana...
+Processing Grammarly...
+Processing Miro...
+Processing Calendly...
+Processing Drift...
+Processing Gusto...
+Warning: Could not retrieve data from https://gusto.com: 403 Client Error: Forbidden for url: https://gusto.com/
+✅ Leads saved to 'lead_outreach.xlsx'
+
+Generating outreach messages with Gemini...
+Loaded 15 leads from lead_outreach.xlsx
+Generating message for Basecamp...
+✅ Message generated for Basecamp
+Message: Subject: Streamlining Collaboration at Basecamp with Vishwash Tech Solutions
+
+Hi Basecamp Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I admire how Basecamp has simplified project management for millions.
+
+Given your focus on efficient team collaboration, I wanted to reach out. We provide robust hardware solutions that can optimize your internal infrastructure, ensuring seamless performance for your software and enhanced productivity for your team.
+
+Would you be open to a quick 15-minute call to explore how Vishwash Tech Solutions can further empower Basecamp's operations?
+
+Generating message for Trello...
+✅ Message generated for Trello
+Message: Subject: Enhancing Trello's Visual Project Management with Vishwash Tech Solutions
+
+Hi Trello Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I admire how Trello empowers teams with visual project management, making complex tasks manageable.
+
+Given your focus on boosting productivity and seamless integration across platforms, I believe our high-performance computing hardware solutions can significantly enhance your development and operational efficiency. We specialize in providing robust infrastructure that scales with your growing user base and supports demanding workloads.
+
+Would you be open to a brief call to explore how Vishwash Tech Solutions can optimize your hardware infrastructure?
+
+Best regards,
+Vishwash Sharma
+
+Generating message for Zapier...
+✅ Message generated for Zapier
+Message: Subject: Streamlining Zapier's AI Workflows with Vishwash Tech Solutions
+
+Hi Zapier Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I've been following Zapier's growth in AI orchestration and the upcoming ZapConnect 2025 with great interest.
+
+Given your focus on scaling AI workflows across 8,000+ apps, I believe our high-performance computing hardware can significantly enhance the speed and efficiency of your automation processes. We specialize in providing robust, scalable infrastructure that can handle the demands of complex AI tasks.
+
+Would you be open to a quick 15-minute call to explore how Vishwash Tech Solutions can optimize Zapier's AI infrastructure?
+
+Generating message for Buffer...
+✅ Message generated for Buffer
+Message: Hi Buffer team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I admire how Buffer streamlines social media management for businesses of all sizes.
+
+Given your focus on efficient content distribution, I wanted to reach out. We provide robust and scalable hardware solutions that can optimize your infrastructure, ensuring seamless performance even during peak usage. This can lead to faster content processing and improved user experience for your customers.
+
+Would you be open to a quick chat to explore how our solutions can benefit Buffer?
+
+Generating message for Canva...
+✅ Message generated for Canva
+Message: Subject: Streamlining Canva's Design Workflow
+
+Hi Canva Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I admire how Canva has democratized design for everyone.
+
+Given your focus on user-friendly design tools, I wanted to reach out. We provide high-performance hardware solutions that can significantly boost the speed and efficiency of your design workflows, especially as your team scales. Our optimized workstations can reduce rendering times and improve overall creative output.
+
+Would you be open to a quick 15-minute call to explore how our solutions can benefit Canva?
+
+Generating message for Notion...
+✅ Message generated for Notion
+Message: Hi Notion team,
+
+I'm Vishwash from Vishwash Tech Solutions. I admire how Notion is streamlining productivity with its all-in-one workspace.
+
+Given your focus on seamless workflows, I thought you might be interested in how our hardware solutions can further enhance your team's efficiency. We specialize in providing high-performance workstations optimized for demanding applications, which could be beneficial for your development and engineering teams.
+
+Would you be open to a quick chat to explore how Vishwash Tech Solutions can support Notion's continued growth?
+
+Generating message for ClickUp...
+✅ Message generated for ClickUp
+Message: Subject: Boosting ClickUp's Productivity with Vishwash Tech Solutions
+
+Hi ClickUp Team,
+
+I admire ClickUp's mission to make the world more productive with your all-in-one platform.
+
+At Vishwash Tech Solutions, we provide cutting-edge hardware solutions designed to optimize workflows and enhance team collaboration. Given ClickUp's focus on productivity for teams, our high-performance workstations and ergonomic peripherals could further empower your employees and boost efficiency.
+
+Would you be open to a brief call to explore how our solutions can complement ClickUp's platform and contribute to your continued growth?
+
+Best regards,
+
+Vishwash Sharma
+Vishwash Tech Solutions
+
+Generating message for FreshBooks...
+✅ Message generated for FreshBooks
+Message: Subject: Streamlining FreshBooks' Operations with Vishwash Tech Solutions
+
+Hi FreshBooks Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I admire how FreshBooks simplifies accounting for small businesses.
+
+Given your focus on cloud-based solutions and managing expenses, our ruggedized mobile devices and barcode scanners could significantly improve your field teams' efficiency in tracking receipts and managing inventory for clients. This would reduce manual data entry and improve accuracy.
+
+Would you be open to a quick 15-minute call to explore how our hardware solutions can integrate with FreshBooks to optimize your clients' operations?
+
+Generating message for Loom...
+✅ Message generated for Loom
+Message: Hi Loom team,
+
+I'm Vishwash from Vishwash Tech Solutions. I noticed you're empowering async communication with video, and your AI-powered features are impressive.
+
+We provide robust hardware solutions that can optimize your video recording and processing workflows, especially as you scale. Our high-performance systems ensure seamless, high-quality video capture and editing, reducing lag and improving overall efficiency.
+
+Would you be open to a quick chat to explore how our hardware can further enhance your platform's performance?
+
+Generating message for Asana...
+✅ Message generated for Asana
+Message: Subject: Streamlining Asana's Workflow with Vishwash Tech Solutions
+
+Hi Asana Team,
+
+I noticed Asana's commitment to helping teams stay focused on goals, especially with remote work. At Vishwash Tech Solutions, we provide robust hardware solutions that can further optimize your platform's performance and user experience.
+
+Given Asana's focus on project management, our high-performance servers and workstations can ensure seamless operation and faster processing for your users, enhancing productivity across the board.    
+
+Would you be open to a quick 15-minute call to explore how our solutions can specifically benefit Asana?
+
+Best regards,
+Vishwash Sharma
+Vishwash Tech Solutions
+
+Generating message for Grammarly...
+✅ Message generated for Grammarly
+Message: Subject: Enhancing Grammarly's AI with Vishwash Tech Solutions
+
+Hi Grammarly Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I've been following Grammarly's impressive growth in AI-powered communication.
+
+Given your focus on seamless user experience, I wanted to reach out. Our hardware solutions are designed to optimize AI processing and enhance the performance of applications like yours. We can help you improve speed and efficiency, leading to even better user satisfaction.
+
+Would you be open to a quick call to explore how Vishwash Tech Solutions can support Grammarly's continued innovation?
+
+Generating message for Miro...
+✅ Message generated for Miro
+Message: Subject: Enhancing Miro's Collaborative Workspace
+
+Hi Miro Team,
+
+Seeing the buzz around Canvas 25 and Miro's impressive growth to 90M+ users, it's clear you're leading the way in collaborative innovation.
+
+At Vishwash Tech Solutions, we provide cutting-edge hardware solutions designed to optimize collaborative environments. Given Miro's focus on seamless teamwork, our interactive displays and high-performance computing devices could further enhance your platform's user experience and productivity.
+
+Would you be open to a quick chat to explore how our solutions can complement Miro's vision?
+
+Best regards,
+
+Vishwash Sharma
+Vishwash Tech Solutions
+
+Generating message for Calendly...
+✅ Message generated for Calendly
+Message: Hi Calendly Team,
+
+I'm Vishwash from Vishwash Tech Solutions. I admire how Calendly has streamlined scheduling for over 20 million professionals.
+
+Given your focus on productivity and ease of use, I thought you might be interested in how our hardware solutions can further optimize your internal workflows. We specialize in providing reliable and efficient hardware that can enhance team collaboration and data processing, potentially improving your platform's performance and user experience.
+
+Would you be open to a quick chat to explore how Vishwash Tech Solutions can support Calendly's continued growth?
+
+Generating message for Drift...
+✅ Message generated for Drift
+Message: Hi Drift Team,
+
+I'm Vishwash Sharma from Vishwash Tech Solutions. I noticed Drift's focus on meaningful conversations to drive revenue, especially with your Salesloft integration.
+
+We provide cutting-edge hardware solutions that can optimize your sales team's performance. Our high-performance workstations and collaboration tools can enhance productivity and streamline communication, leading to even better customer engagement.
+
+Would you be open to a quick chat to explore how our solutions can specifically benefit Drift?
+
+Generating message for Gusto...
+✅ Message generated for Gusto
+Message: Subject: Streamlining HR Operations at Gusto with Vishwash Tech Solutions
+
+Hi [Name of relevant contact at Gusto, e.g., Head of HR],
+
+Seeing Gusto's growth in the HR & Payroll space, I wanted to reach out. At Vishwash Tech Solutions, we provide robust hardware solutions that can optimize your internal operations, especially as you scale.
+
+Given your cloud-based platform, our [mention a specific hardware solution, e.g., high-performance servers] can ensure seamless data processing and enhanced security for your sensitive payroll information.
+
+Would you be open to a quick 15-minute call to explore how we can help Gusto further streamline its HR infrastructure?
+
+Best,
+
+Vishwash Sharma
+Vishwash Tech Solutions
+
+✅ All outreach messages saved to 'enriched_outreach_messages.xlsx'

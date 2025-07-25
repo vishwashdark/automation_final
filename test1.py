@@ -89,8 +89,8 @@ def get_simulated_leads() -> List[Dict]:
     """Fallback simulated data if Apollo fails"""
     return [
         {
-            "company_name": "Basecamp", 
-            "website": "https://basecamp.com", 
+            "company_name": "Basecamp",
+            "website": "https://basecamp.com",
             "employee_count": 60,
             "industry": "Software",
             "apollo_id": "sim_1",
@@ -98,13 +98,130 @@ def get_simulated_leads() -> List[Dict]:
             "location": "Chicago"
         },
         {
-            "company_name": "Trello", 
-            "website": "https://trello.com", 
+            "company_name": "Trello",
+            "website": "https://trello.com",
             "employee_count": 100,
-            "industry": "Software", 
+            "industry": "Software",
             "apollo_id": "sim_2",
-            "description": "Visual project management tool using boards and cards",
+            "description": "Visual project management with boards and cards",
             "location": "New York"
+        },
+        {
+            "company_name": "Zapier",
+            "website": "https://zapier.com",
+            "employee_count": 200,
+            "industry": "Automation",
+            "apollo_id": "sim_3",
+            "description": "Workflow automation for apps without code",
+            "location": "Remote"
+        },
+        {
+            "company_name": "Buffer",
+            "website": "https://buffer.com",
+            "employee_count": 85,
+            "industry": "Marketing",
+            "apollo_id": "sim_4",
+            "description": "Social media management and scheduling tool",
+            "location": "Remote"
+        },
+        {
+            "company_name": "Canva",
+            "website": "https://www.canva.com",
+            "employee_count": 150,
+            "industry": "Design",
+            "apollo_id": "sim_5",
+            "description": "Online design and publishing tools for everyone",
+            "location": "Sydney"
+        },
+        {
+            "company_name": "Notion",
+            "website": "https://www.notion.so",
+            "employee_count": 190,
+            "industry": "Productivity",
+            "apollo_id": "sim_6",
+            "description": "All-in-one workspace for notes, projects, and docs",
+            "location": "San Francisco"
+        },
+        {
+            "company_name": "ClickUp",
+            "website": "https://www.clickup.com",
+            "employee_count": 170,
+            "industry": "Productivity",
+            "apollo_id": "sim_7",
+            "description": "Productivity platform for teams and task management",
+            "location": "San Diego"
+        },
+        {
+            "company_name": "FreshBooks",
+            "website": "https://www.freshbooks.com",
+            "employee_count": 110,
+            "industry": "Finance",
+            "apollo_id": "sim_8",
+            "description": "Cloud accounting software for small businesses",
+            "location": "Toronto"
+        },
+        {
+            "company_name": "Loom",
+            "website": "https://www.loom.com",
+            "employee_count": 75,
+            "industry": "Communication",
+            "apollo_id": "sim_9",
+            "description": "Video messaging for async workplace communication",
+            "location": "San Francisco"
+        },
+        {
+            "company_name": "Asana",
+            "website": "https://asana.com",
+            "employee_count": 180,
+            "industry": "Project Management",
+            "apollo_id": "sim_10",
+            "description": "Work management platform for teams and tasks",
+            "location": "San Francisco"
+        },
+        {
+            "company_name": "Grammarly",
+            "website": "https://www.grammarly.com",
+            "employee_count": 200,
+            "industry": "AI Writing",
+            "apollo_id": "sim_11",
+            "description": "AI-powered writing assistant for clear communication",
+            "location": "San Francisco"
+        },
+        {
+            "company_name": "Miro",
+            "website": "https://miro.com",
+            "employee_count": 160,
+            "industry": "Collaboration",
+            "apollo_id": "sim_12",
+            "description": "Online collaborative whiteboard platform",
+            "location": "Amsterdam"
+        },
+        {
+            "company_name": "Calendly",
+            "website": "https://calendly.com",
+            "employee_count": 90,
+            "industry": "Scheduling",
+            "apollo_id": "sim_13",
+            "description": "Meeting scheduling tool for individuals and teams",
+            "location": "Atlanta"
+        },
+        {
+            "company_name": "Drift",
+            "website": "https://www.drift.com",
+            "employee_count": 130,
+            "industry": "Sales",
+            "apollo_id": "sim_14",
+            "description": "Conversational marketing and sales platform",
+            "location": "Boston"
+        },
+        {
+            "company_name": "Gusto",
+            "website": "https://gusto.com",
+            "employee_count": 140,
+            "industry": "HR & Payroll",
+            "apollo_id": "sim_15",
+            "description": "Cloud-based payroll, benefits, and HR software",
+            "location": "San Francisco"
         }
     ]
 
@@ -329,6 +446,7 @@ def generate_outreach_messages(apollo_key: str, gemini_key: str, input_file: str
             
             if message:
                 print(f"✅ Message generated for {company_name}")
+                print(f"Message: {message}")
             else:
                 message = "Failed to generate message."
                 print(f"❌ Failed to generate message for {company_name}")
