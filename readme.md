@@ -1,24 +1,44 @@
-#Welcome to personalized B2B outreach automation project!
-# This project is designed to automate the process of generating personalized outreach messages for potential leads based on enriched company data.
-# It integrates with Gemini API for text generation and Apollo API for lead fetching.
-# The main components include:
-# - `test.ipynb`: Jupyter Notebook for testing and generating outreach messages.
-# - 'readme.md': Documentation for the project.
-# - 'requirements.txt': List of dependencies.
+# Personalized B2B Outreach Automation Project
 
+This project automates the creation of personalized outreach messages for potential leads using enriched company data. It integrates with the Gemini API for text generation and the Apollo API for lead fetching.
 
-Steps to install the project:
-# 1. Clone the repository:
-#    git clone
-# 2. Navigate to the project directory:
-#    cd automation
-# 3. Install the required packages:
-#    pip install -r requirements.txt
-# 4. Run the python script:
-#    python test1.py
+## Project Structure
 
-Important keys to set up the project
-1. Gemini API Key: 
-   - Set the `GEMINI_API_KEY` variable in `test.ipynb` to your Gemini API key.
-2. Apollo API Key:
-   - Set the `APOLLO_API_KEY` variable in `test1.py` to
+- **`test.ipynb`**: Jupyter Notebook for testing and generating outreach messages.
+- **`readme.md`**: Project documentation.
+- **`requirements.txt`**: List of required dependencies.
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd automation
+   ```
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Run the Python script:**
+   ```bash
+   python test1.py
+   ```
+
+## API Key Setup
+
+- **Gemini API Key:**  
+  Set the `GEMINI_API_KEY` variable in `test.ipynb` to your Gemini API key.
+
+- **Apollo API Key:**  
+  Set the `APOLLO_API_KEY` variable in `test1.py` to your Apollo API key.
+
+## Usage
+1. **Run the Python script:**
+   ```bash
+   python test1.py
+   ```
+test1.py --size '50-400' --industry 'software' --location 'United States' {optional location filter}
+
