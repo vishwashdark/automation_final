@@ -8,13 +8,13 @@ from typing import List, Dict, Optional
 import json
 
 # === Configuration ===
-APOLLO_API_BASE_URL = "https://api.apollo.io/v1"
+APOLLO_API_BASE_URL = "https://api.apollo.io/api/v1"
 GEMINI_API_URL_TEMPLATE = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={}"
 
 # === Apollo API Functions ===
 def fetch_leads_from_apollo(api_key: str, company_size: str, industry: str, location: str = "", limit: int = 10) -> List[Dict]:
     """Fetch real leads using Apollo API"""
-    url = f"{APOLLO_API_BASE_URL}/mixed_people/organization_top_people"
+    url = f"{APOLLO_API_BASE_URL}/mixed_people/search"
     
     # Parse company size range
     try:
@@ -51,6 +51,18 @@ def fetch_leads_from_apollo(api_key: str, company_size: str, industry: str, loca
         
         if 'organizations' in data:
             for org in data['organizations']:
+                leads.append({
+                    "company_name": org.get('name', 'Unknown'),
+                    "website": org.get('website_url', ''),
+                    "employee_count": org.get('estimated_num_employees', 0),
+                    "industry": org.get('industry', ''),
+                    "apollo_id": org.get('id', ''),
+                    "description": org.get('short_description', ''),
+                    "location": org.get('primary_location', {}).get('city', '') if org.get('primary_location') else ''
+                })
+        elif 'companies' in data:
+            # Handle alternative response format
+            for org in data['companies']:
                 leads.append({
                     "company_name": org.get('name', 'Unknown'),
                     "website": org.get('website_url', ''),
@@ -165,8 +177,8 @@ def scrape_insights(website_url: str) -> List[str]:
 
 # === Gemini API Functions ===
 def get_gemini_api_key() -> str:
-    """Securely get Gemini API key"""
-    return getpass.getpass("Enter your Gemini API Key: ")
+    """Get Gemini API key (your provided key)"""
+    return "AIzaSyDt30zNxdamtyjrn4MxEHg2zLRqwsXATW8"  # Your provided Gemini API key
 
 def gemini_generate_text(api_key: str, prompt_text: str, temperature: float = 0, 
                         top_p: float = 0.9, top_k: int = 40) -> Optional[str]:
@@ -269,6 +281,7 @@ Requirements:
 - Focus on relevance and personalization based on the data provided
 - Use actual names directly (no placeholders)
 - Make it feel human and genuine
+- ONLY RETURN THE GENERATED MESSAGE, NOTHING ELSE NO EXTRA COMMENTS OR EXPLANATIONS
 """
 
 def generate_outreach_messages(apollo_key: str, gemini_key: str, input_file: str = 'lead_outreach.xlsx', 
