@@ -3,7 +3,7 @@
 This project automates the creation of personalized outreach messages for potential leads using enriched company data. It integrates with the Gemini API for text generation and the Apollo API for lead fetching.
 
 # Complete flow chart of the code
-![Flow Chart](https://raw.githubusercontent.com/vishwashsharma/automation/main/flowchart.png)
+![Flow Chart](https://github.com/vishwashdark/automation_final/blob/main/flow%20chart%20for%20code.png)
 
 ## Project Structure
 
